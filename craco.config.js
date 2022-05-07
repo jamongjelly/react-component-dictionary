@@ -1,5 +1,4 @@
 const CracoAlias = require("craco-alias");
-const ReactHotReloadPlugin = require("craco-plugin-react-hot-reload");
 
 module.exports = {
     plugins: [
@@ -9,9 +8,6 @@ module.exports = {
                 source: "tsconfig",
                 tsConfigPath: "tsconfig.json",
             },
-        },
-        {
-            plugin: ReactHotReloadPlugin,
         },
     ],
 };
