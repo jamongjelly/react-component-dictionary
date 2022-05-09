@@ -1,12 +1,17 @@
 {
     "name": "react-component-dictionary",
     "version": "0.1.0",
+    "description": "리액트 컴포넌트를 연습하기 위한 샌드박스입니다. (TS)",
     "author": "M-DZN",
     "license": "MIT",
     "private": true,
+    "homepage": "https://github.com/m-dzn/react-component-dictionary#readme",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/m-dzn/react-component-dictionary.git"
+    },
+    "bugs": {
+        "url": "https://github.com/m-dzn/react-component-dictionary/issues"
     },
     "main": "src/index.tsx",
     "scripts": {
