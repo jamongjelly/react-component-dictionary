@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2020", "DOM"],     // 런타임 시 제공될 ES버전, DOM API 등 명시
+    "target": "ES5",              // 컴파일 후 나올 결과물의 버전
+    
+    /* 모듈 관련 */
+    "module": "ESNext",           // 컴파일 시 적용할 모듈 시스템
+    "moduleResolution": "Node",   // 모듈 해석 전략 설정
+    "esModuleInterop": true,      // ES6 모듈 문법으로 CommonJS 모듈 가져오기
+    "sourceMap": true,
+
+    /* TS 문법 검사 옵션 */
+    "strict": true,
+
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",           // JSX 문법 해석 방식
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["src"]
+}
