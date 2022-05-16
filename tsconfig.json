@@ -21,5 +21,9 @@
     }
   },
   "exclude": ["node_modules"],
-  "include": ["src"]
+  "include": ["src", "types/**/*.d.ts"],
+  "typeRoots": [
+    "./types",
+    "./node_modules/@types"
+  ]
 }

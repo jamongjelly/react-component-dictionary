@@ -19,6 +19,34 @@ const config: Configuration = {
         use: 'babel-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          'file-loader?name=assets/images/[name].[ext]',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 100,
+              },
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: [0.65, 0.9],
+                speed: 4,
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              webp: {
+                quality: 100,
+              },
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
