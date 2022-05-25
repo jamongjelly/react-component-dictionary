@@ -42,6 +42,13 @@ export const Section = styled.section<{ active: boolean }>`
     width: 300px;
     height: 200px;
 
+    &:hover {
+      .disc {
+        left: 50%;
+        transition-delay: 0s;
+      }
+    }
+
     /* active style */
     ${({ active }) =>
       active &&
@@ -97,7 +104,6 @@ export const Disc = styled.div<{ active: boolean; delay: boolean }>`
       active &&
       css`
         left: 35%;
-        transition-delay: ${ACTIVE_DISC_DELAY};
       `}
   }
 `;
