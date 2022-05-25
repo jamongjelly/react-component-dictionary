@@ -7,14 +7,16 @@ export const Container = styled.div`
   font-size: 16px;
 `;
 
-export const Article = styled.article<{ background: [string, string] }>`
-  ${({ background }) => css`
-    background: linear-gradient(
-      ${GRADIENT_DIRECTION},
-      ${background[0]},
-      ${background[1]}
-    );
-  `}
+export const Article = styled.article<{ background?: [string, string] }>`
+  ${({ background }) =>
+    background &&
+    css`
+      background: linear-gradient(
+        ${GRADIENT_DIRECTION},
+        ${background[0]},
+        ${background[1]}
+      );
+    `}
   width: 100vw;
   height: 100vh;
 

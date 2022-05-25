@@ -1,15 +1,14 @@
-import { useState } from 'react';
-
-interface Props {
-  numOfCDs: number;
-}
+import { getAlbums } from '@/components/pages/CDPlayerPage/apis';
+import { AlbumData } from '@/components/pages/CDPlayerPage/types';
+import { useEffect, useState } from 'react';
 
 const START_INDEX = 0;
 
-export const useCDPlayer = ({ numOfCDs }: Props) => {
+export const useCDPlayer = () => {
+  const [albums, setAlbums] = useState<AlbumData[]>([]);
   const [currentCD, setCurrentCD] = useState(START_INDEX);
 
-  const lastIndex = numOfCDs - 1;
+  const lastIndex = albums.length - 1;
 
   function onClickPrev() {
     setCurrentCD((prev) => {
@@ -30,7 +29,12 @@ export const useCDPlayer = ({ numOfCDs }: Props) => {
     setCurrentCD(index);
   }
 
+  useEffect(() => {
+    getAlbums().then(setAlbums);
+  }, []);
+
   return {
+    albums,
     currentCD,
     onClickPrev,
     onClickNext,
