@@ -4,7 +4,6 @@ import { Album, AlbumButton, PointWrap } from './components';
 
 import { useCDPlayer } from './hooks';
 import { GlobalStyles } from './styles';
-import './styles/reset.css';
 
 import * as S from './CDPlayerPage.styles';
 
