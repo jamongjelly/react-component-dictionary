@@ -30,7 +30,7 @@ const config: Configuration = merge(common, {
     rules: [
       {
         test: /\.(sa|sc|c)ss$/i,
-        use: ['styled-loader', 'css-loader', 'sass-loader'],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
   },
