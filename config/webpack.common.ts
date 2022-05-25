@@ -1,12 +1,12 @@
 /* Node & Webpack Modules */
 import path from 'path';
-import { Configuration } from 'webpack';
+import webpack, { Configuration } from 'webpack';
 
 /* Webpack Plugins */
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 /* Project Modules */
-import { SOURCE_DIR, PUBLIC_DIR, ROOT_DIR } from './webpack.const';
+import { SOURCE_DIR, PUBLIC_DIR, ROOT_DIR, ENV } from './webpack.const';
 
 const config: Configuration = {
   name: 'react-component-dictionary',
@@ -52,6 +52,11 @@ const config: Configuration = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(ROOT_DIR, PUBLIC_DIR, 'index.html'),
+    }),
+    new webpack.DefinePlugin({
+      process: {
+        env: ENV,
+      },
     }),
   ],
   resolve: {
