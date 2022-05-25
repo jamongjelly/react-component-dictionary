@@ -10,7 +10,7 @@ export const AlbumButton = ({ onClick, children }: Props) => {
   return <Button onClick={onClick}>{children}</Button>;
 };
 
-const BACKGROUND = '#333';
+const BACKGROUND = '#000';
 const FONT_COLOR = '#FFF';
 
 export const Button = styled.button`
