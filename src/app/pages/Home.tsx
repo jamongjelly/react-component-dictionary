@@ -6,7 +6,9 @@ import { BubblyButton } from '@/components';
 export const Home = () => {
   return (
     <Container>
-      <BubblyButton />
+      <Row>
+        <BubblyButton />
+      </Row>
     </Container>
   );
 };
@@ -14,4 +16,9 @@ export const Home = () => {
 const Container = styled.main`
   min-height: 100%;
   padding: 40px;
+`;
+
+const Row = styled.div`
+  display: flex;
+  gap: 24px;
 `;
