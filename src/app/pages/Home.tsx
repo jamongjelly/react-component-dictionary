@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { BubblyButton } from '@/components';
+import { BubblyButton, RippleButton } from '@/components';
 
 export const Home = () => {
   return (
     <Container>
       <Row>
         <BubblyButton />
+        <RippleButton>RippleButton</RippleButton>
       </Row>
     </Container>
   );
