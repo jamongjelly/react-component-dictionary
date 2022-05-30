@@ -22,5 +22,6 @@ const Container = styled.main`
 
 const Row = styled.div`
   display: flex;
+  align-items: flex-start;
   gap: 24px;
 `;
