@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { BubblyButton, RippleButton } from '@/components';
-import { PaperPlaneButton } from '@/components/buttons/PaperPlaneButton';
+import { BubblyButton, RippleButton, PaperPlaneButton } from '@/components';
 
 export const Home = () => {
   return (
