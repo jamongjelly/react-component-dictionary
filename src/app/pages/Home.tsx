@@ -1,30 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
-
-import {
-  BubblyButton,
-  RippleButton,
-  PaperPlaneButton,
-  SimpleSwitch,
-} from '@/components';
 
 import { Layout } from '../components';
 
 export const Home = () => {
-  return (
-    <Layout>
-      <Row>
-        <BubblyButton />
-        <RippleButton>RippleButton</RippleButton>
-        <PaperPlaneButton />
-        <SimpleSwitch />
-      </Row>
-    </Layout>
-  );
+  return <Layout>React Component Dictionary</Layout>;
 };
-
-const Row = styled.div`
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-`;
