@@ -8,23 +8,20 @@ import {
   SimpleSwitch,
 } from '@/components';
 
+import { Layout } from '../components';
+
 export const Home = () => {
   return (
-    <Container>
+    <Layout>
       <Row>
         <BubblyButton />
         <RippleButton>RippleButton</RippleButton>
         <PaperPlaneButton />
         <SimpleSwitch />
       </Row>
-    </Container>
+    </Layout>
   );
 };
-
-const Container = styled.main`
-  min-height: 100%;
-  padding: 40px;
-`;
 
 const Row = styled.div`
   display: flex;
