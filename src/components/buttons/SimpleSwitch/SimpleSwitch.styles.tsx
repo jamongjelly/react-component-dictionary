@@ -31,4 +31,6 @@ export const Handle = styled(motion.button)`
   height: ${HEIGHT * HANDLE_RATIO}px;
   aspect-ratio: 1;
   border-radius: 50%;
+
+  cursor: pointer;
 `;
