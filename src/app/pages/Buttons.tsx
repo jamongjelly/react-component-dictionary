@@ -14,7 +14,7 @@ export const Buttons = () => {
   return (
     <Layout>
       <Row>
-        <BubblyButton />
+        <BubblyButton>BubblyButton</BubblyButton>
         <RippleButton>RippleButton</RippleButton>
         <PaperPlaneButton />
         <SimpleSwitch />

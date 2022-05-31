@@ -1,1 +1,1 @@
-export * from "./BubblyButton";
+export * from './BubblyButton';

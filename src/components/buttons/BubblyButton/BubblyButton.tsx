@@ -1,14 +1,18 @@
-import React from "react";
+import React from 'react';
 
-import { StyledButton } from "./BubblyButton.styles";
-import { useBubblyButton } from "./useBubblyButton";
+import { StyledButton } from './BubblyButton.styles';
+import { useBubblyButton } from './useBubblyButton';
 
-export const BubblyButton = () => {
-    const { animate, handleClick } = useBubblyButton();
+interface Props {
+  children: React.ReactNode;
+}
 
-    return (
-        <StyledButton animate={animate} onClick={handleClick}>
-            BubblyButton
-        </StyledButton>
-    );
+export const BubblyButton = ({ children }: Props) => {
+  const { animate, handleClick } = useBubblyButton();
+
+  return (
+    <StyledButton animate={animate} onMouseDown={handleClick}>
+      {children}
+    </StyledButton>
+  );
 };
