@@ -6,6 +6,7 @@ import {
   RippleButton,
   PaperPlaneButton,
   SimpleSwitch,
+  LightRadioButton,
 } from '@/components';
 
 import { Layout } from '../components';
@@ -18,6 +19,7 @@ export const Buttons = () => {
         <RippleButton>RippleButton</RippleButton>
         <PaperPlaneButton />
         <SimpleSwitch />
+        <LightRadioButton label="A" />
       </Row>
     </Layout>
   );
