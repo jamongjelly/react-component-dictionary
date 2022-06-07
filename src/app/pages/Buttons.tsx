@@ -7,6 +7,7 @@ import {
   PaperPlaneButton,
   SimpleSwitch,
   LightRadioButton,
+  CutCornerButton,
 } from '@/components';
 
 import { Layout } from '../components';
@@ -20,6 +21,13 @@ export const Buttons = () => {
         <PaperPlaneButton />
         <SimpleSwitch />
         <LightRadioButton label="A" />
+        <CutCornerButton>Button</CutCornerButton>
+        <CutCornerButton fontColor="#F3738A" border="2px" slant="0.5em">
+          Button
+        </CutCornerButton>
+        <CutCornerButton fontColor="#69DB3A" border="8px" slant="40px">
+          Button
+        </CutCornerButton>
       </Row>
     </Layout>
   );
