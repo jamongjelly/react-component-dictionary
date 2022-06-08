@@ -31,4 +31,7 @@ const SidebarSection = styled.section`
 const Main = styled.main`
   min-height: 100%;
   padding: 40px;
+
+  display: flex;
+  flex-direction: column;
 `;

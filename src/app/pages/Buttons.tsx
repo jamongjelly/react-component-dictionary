@@ -15,7 +15,7 @@ import { Layout } from '../components';
 export const Buttons = () => {
   return (
     <Layout>
-      <Row>
+      <InnerLayout>
         <BubblyButton>BubblyButton</BubblyButton>
         <RippleButton>RippleButton</RippleButton>
         <PaperPlaneButton />
@@ -28,13 +28,17 @@ export const Buttons = () => {
         <CutCornerButton fontColor="#69DB3A" border="8px" slant="40px">
           Button
         </CutCornerButton>
-      </Row>
+      </InnerLayout>
     </Layout>
   );
 };
 
-const Row = styled.div`
+const InnerLayout = styled.div`
+  width: 100%;
+
   display: flex;
-  align-items: flex-start;
-  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 56px;
 `;
