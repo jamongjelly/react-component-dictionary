@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { PATH } from '@/app/constants';
-import { Buttons } from '@/app/pages';
+import { Buttons, Menus } from '@/app/pages';
 import { CDPlayerPage, MenuItem } from '@/components';
 
 export const sidebarMenu: MenuItem[] = [
@@ -10,6 +10,7 @@ export const sidebarMenu: MenuItem[] = [
     icon: 'https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1632069098/noticon/hhtfggl2uroruklhyh1b.png',
     subMenu: [
       { label: 'Buttons', path: PATH.BUTTONS, element: () => <Buttons /> },
+      { label: 'Menus', path: PATH.MENUS, element: () => <Menus /> },
     ],
   },
   {
