@@ -41,7 +41,6 @@ export const Ul = styled.ul`
 export const Li = styled.li`
   background: ${BACKGROUND};
   width: 100%;
-  padding: 25px 0px;
 
   opacity: 0;
   text-indent: ${TEXT_INDENT}px;
@@ -58,6 +57,9 @@ export const Li = styled.li`
   }
 
   a {
+    display: block;
+    padding: 25px 0px;
+
     text-decoration: none;
   }
 `;
