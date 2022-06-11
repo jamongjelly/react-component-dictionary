@@ -4,4 +4,5 @@ export const PATH = {
   MENUS: '/menus',
   TEXTS: '/texts',
   CDPLAYER: '/cdplayer',
+  EXPANDING_CARDS: '/expanding-cards',
 };

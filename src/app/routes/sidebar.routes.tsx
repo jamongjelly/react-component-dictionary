@@ -1,8 +1,14 @@
 import React from 'react';
 
 import { PATH } from '@/app/constants';
-import { Buttons, Menus, Texts } from '@/app/pages';
-import { CDPlayerPage, MenuItem } from '@/components';
+import {
+  Buttons,
+  Menus,
+  Texts,
+  CDPlayerPage,
+  ExpandingCardsPage,
+} from '@/app/pages';
+import { MenuItem } from '@/components';
 
 export const sidebarMenu: MenuItem[] = [
   {
@@ -22,6 +28,11 @@ export const sidebarMenu: MenuItem[] = [
         label: 'IU CD 플레이어',
         path: PATH.CDPLAYER,
         element: () => <CDPlayerPage />,
+      },
+      {
+        label: 'Expanding Cards',
+        path: PATH.EXPANDING_CARDS,
+        element: () => <ExpandingCardsPage />,
       },
     ],
   },
