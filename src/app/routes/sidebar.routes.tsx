@@ -7,6 +7,7 @@ import {
   Texts,
   CDPlayerPage,
   ExpandingCardsPage,
+  NikeShoesScrollPage,
 } from '@/app/pages';
 import { MenuItem } from '@/components';
 
@@ -33,6 +34,11 @@ export const sidebarMenu: MenuItem[] = [
         label: 'Expanding Cards',
         path: PATH.EXPANDING_CARDS,
         element: () => <ExpandingCardsPage />,
+      },
+      {
+        label: 'Nike Shoes Scroll',
+        path: PATH.NIKE_SHOES_SCROLL,
+        element: () => <NikeShoesScrollPage />,
       },
     ],
   },

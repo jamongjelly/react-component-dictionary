@@ -5,4 +5,5 @@ export const PATH = {
   TEXTS: '/texts',
   CDPLAYER: '/cdplayer',
   EXPANDING_CARDS: '/expanding-cards',
+  NIKE_SHOES_SCROLL: '/nike-shoes-scroll',
 };
